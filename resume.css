@@ -1,0 +1,513 @@
+body{
+	margin: 0px;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+/*body header*/
+#body-header{
+	height: 60vh;
+	background-image:url(picture/macbookk.jpg);
+	background-size: cover;
+	background-position: center;
+	opacity: 0.8;
+	background-attachment: fixed;
+}
+@media screen and(max-width:600px){
+	section{
+	width:100%;
+}
+
+}
+/*horizontal lists*/
+.horizontal-list{
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 8px 0px;
+	margin-top: 10px;
+}
+.horizontal-list li a{
+	color: white;
+	text-decoration: none;
+	
+}
+.nav-menu li a:hover{
+	color: grey;
+	border-bottom: 1px solid grey;
+	
+
+}
+
+
+/*for name and social icons*/
+#name-social-container{
+	margin-top: 10vh;
+}
+#my-name{
+	font-size: 3rem;
+	color: white;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+	border-radius: 50%;
+}
+
+.social-icon li a i{
+	padding: 10px;
+	font-size: 1.5rem;
+	border-radius: 50%;
+}
+.social-icon li a i:hover{
+	box-shadow: 0px 0px 6px 4px grey;
+}
+
+
+/*about section*/
+
+#about{
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+.my-image{
+	height: 12rem;
+	width: 12rem;
+	margin: auto;
+	margin-top: -17vh;
+
+}
+.my-image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 8px 6px grey;
+}
+#about p{
+	font-size: 20px;
+	margin-left: 20px;
+	margin-right: 5px;
+}
+
+
+/*skill section css code*/
+#skill{
+	height: 200px;
+
+}
+.skill-display{
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+.skill-progress{
+	width: 7rem;
+	height: 1.2rem;
+	display: flex;
+	background-color: lightgray;
+	border-radius: 0.9rem;
+	border: 2px solid black;
+	box-shadow: 2px 2px 2px 2px grey;
+	overflow: hidden;
+}
+.skill-name{
+	border-radius:2px;
+}
+.skill-name span{
+	color: white;
+	font-size: 0.5 rem;
+	margin:5px;
+
+
+}
+
+
+/*It is like imediate child of the skill progress */
+.skill-progress>div{
+	border-radius: 20px 0px 0px 20px;
+}
+
+
+
+/*General class*/
+
+.text-center{
+	text-align: center;
+}
+.nav-menu horizontal-list li a{
+	transition: color 0.5s;
+	
+}
+.mb-blue{
+	background-color: blue;
+}
+.mb-orange{
+	background-color: deeppink;
+}
+.mb75px{
+	margin-bottom: 75px;
+}
+
+/*Section for general class*/
+
+
+section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height:auto;
+	align-items: center;
+	padding-bottom: 50px;
+}
+section:nth-child(2n){
+	background-color: lightgray;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+
+
+/*for skill section general */
+
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	margin:10px auto ;
+	font-weight: 500;
+}
+.section-heading span{
+	font-size: 40px;
+	color:#2857a4 ;
+	display: inline-block;
+	padding-top:10px ;
+	margin-right: 0.5rem;
+
+}
+
+/*For project section*/
+.project-display{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+.project-progress a img{
+	height: 30vh;
+	width: 30vh;
+	overflow: hidden;
+}
+
+/*For contact section */
+.contact-display{
+		background-image: linear-gradient( to right,#2857a4 ,#403066);
+		width: 100%;
+		
+
+}
+.contact-progress{
+	display: flex;
+
+}
+.left{
+	flex-basis:40%;
+	padding: 40px 60px;
+	color: white;
+}
+.right{
+	flex-basis:60% ;
+	color: white;
+	padding: 40px;
+}
+input{
+	width: 100%;
+	border:none;
+	border-bottom: 1px solid grey;
+	outline: none;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+button{
+	height: 30px;
+	width: auto;
+	outline: none;
+	background-color: #403066;
+	color: white;
+	border-radius: 5px;
+	border-radius: 2px grey;
+	margin-left: 170px;
+	margin-top: 30px;
+}
+tr td{
+	padding-top: 5px;
+}
+label{
+	font-weight: 700;
+}
+
+
+/*Work experience section code */
+.timeline{
+	position: relative;
+	width: 70%;
+	border: 1px solid lightblue;
+}
+.timeline-box{
+	position: relative;
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+	/*border: 2px solid black;*/
+	margin: 5px;
+}
+.timeline-box:nth-child(2n){
+	left: 53%;
+}
+.logo::before{
+	content: '';
+	display: inline-block;
+	background-image:url(picture/hcltech.png);
+	height: 20px;
+	width: 20px;
+	background-size: contain;
+
+
+}
+.logo{
+	color:darkblue;
+	margin-top: 5px;
+	margin-left: 10px;
+	padding-top: 15px;
+
+}
+.hcl{
+	margin-left: 70%;
+	color:deeppink;
+	top: 2px;
+}
+@media screen and(max-width:600px){
+	.hcl{
+	   left: 50% !important;
+	}
+}
+.hcll{
+	margin-left: 70%;
+	color:royalblue;
+	margin-top: 10px;
+}
+.timeline-box p{
+	color: purple;
+	margin-left: 10px;
+	align-items: center;
+	text-transform: capitalize;
+}
+.timeline-divider{
+	position: absolute;
+	height: 80%;
+	width: 0;
+	border: 2px dashed royalblue;
+	top: 10%;
+	left: 50%;
+
+}
+.timeline-traveler{
+	position: sticky;
+	top: 20%;
+	transform: rotate(90deg);
+	z-index: 2;
+}
+.timeline-box:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	right: -12.5%;
+	width:0.5rem;
+	height: 0.5rem;
+	background-color:deeppink;
+	top:28%;
+	z-index: 2;
+
+}
+.timeline-box:nth-child(2n)::after{
+	content: '';
+    position: absolute;
+	border-radius: 50%;
+	left: -9.5%;
+	width:0.5rem;
+	height: 0.5rem;
+	background-color:deeppink;
+	top:28%;
+	z-index: 2;
+
+}
+
+
+.logo2::before{
+	content: '';
+	display: inline-block;
+	background-image:url(picture/wi.png);
+	height: 20px;
+	width: 20px;
+	background-size: contain;
+}
+.logo2{
+	margin-left: 5px;
+	color: darkblue;
+}
+.wiz{
+	
+	color:deeppink;
+	top: 2px;
+	margin-left: 5%;
+}
+.wizz{
+	color:royalblue;
+	margin-top: 10px;
+	margin-left: 5%;
+	text-transform: capitalize;
+}
+.logo3::before{
+	content: '';
+	display: inline-block;
+	background-image:url(picture/intern.jpg);
+	height: 20px;
+	width: 20px;
+	background-size: contain;
+}
+.logo3{
+	margin-left: 5px;
+	color: darkblue;
+}
+.web{
+	margin-left: 50%;
+	color:deeppink;
+	top: 2px;
+
+}
+.webb{
+	margin-left: 50%;
+	color:royalblue;
+	margin-top: 10px;
+}
+
+
+/*Education Section coding */
+.education-display{
+	position: relative;
+	width: 70%;
+	border: 1px solid lightskyblue;
+
+}
+.education-progress{
+	position: relative;
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+	/*border: 3px solid lightskyblue;*/
+	margin: 5px;
+}
+.education-progress:nth-child(2n){
+	left: 53%;
+
+}
+.education-progress:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	right: -12%;
+	width:0.5rem;
+	height: 0.5rem;
+	background-color:deeppink;
+	top:28%;
+	z-index: 2;
+
+}
+.education-progress:nth-child(2n)::after{
+	content: '';
+    position: absolute;
+	border-radius: 50%;
+	left: -10%;
+	width:0.5rem;
+	height: 0.5rem;
+	background-color:deeppink;
+	top:28%;
+	z-index: 2;
+
+}
+
+.clg{
+	color:darkblue;
+	margin-top: 5px;
+	margin-left: 10px;
+	padding-top: 15px;
+
+
+}
+.biet{
+	color:deeppink;
+	top: 2px;
+	margin-left: 5px;
+}
+.biett{
+	margin-left: 5px;
+	color:royalblue;
+	margin-top: 10px;
+}
+.education-progress p{
+	color: purple;
+	margin-left: 5px;
+	align-items: center;
+	text-transform: capitalize;
+}
+.clg1{
+	color:darkblue;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding-top: 15px;
+}
+.ruh{
+	color:deeppink;
+	top: 2px;
+	margin-left: 5px;
+}
+.ruhs{
+	margin-left: 5px;
+	color:royalblue;
+	margin-top: 10px;
+}
+.clg::before{
+	content: '';
+	display: inline-block;
+	background-image:url(picture/biet.jpg);
+	height: 20px;
+	width: 20px;
+	background-size: contain;
+}
+.clg1::before{
+	content: '';
+	display: inline-block;
+	background-image:url(picture/ruhs.jpg);
+	height: 20px;
+	width: 20px;
+	background-size: contain;
+}
+/*percantage class */
+.eighty-five-percent{
+	width: 85%;
+	height: inherit;
+}
+.eighty-percent{
+	width: 80%;
+	height: inherit;
+}
+.sixty-percent{
+	width: 60%;
+	height: inherit;
+}
+section:target{
+	background-image: linear-gradient(lightskyblue,grey);
+}
